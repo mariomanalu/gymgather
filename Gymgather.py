@@ -72,7 +72,6 @@ class Gymgather:
                         stage="up"
                         counter +=1
                         if counter == 3:
-                            
                             new_sms = SMS()
                             new_sms.send_SMS()
                             print("Sent SMS")
