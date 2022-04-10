@@ -71,14 +71,11 @@ class Gymgather:
                     if angle < 30 and stage =='down':
                         stage="up"
                         counter +=1
-                        print("CURL COUNTER:" + counter)
-
-                    if counter == 3:
-                        print("Generating SMS")
-                        new_sms = SMS()
-                        print("BlA")
-                        new_sms.send_SMS()
-                        print("FINISH SMS")
+                        if counter == 3:
+                            
+                            new_sms = SMS()
+                            new_sms.send_SMS()
+                            print("Sent SMS")
                             
                 except:
                     pass
